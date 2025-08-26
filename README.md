@@ -1,6 +1,7 @@
 📊 E-Commerce Data Analysis Dashboard
 =====================================
 📂 Dataset
+Source Link : https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 
 Menggunakan dataset publik Brazilian E-Commerce (Olist), yang berisi:
 
