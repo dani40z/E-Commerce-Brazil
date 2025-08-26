@@ -1,35 +1,87 @@
 📊 E-Commerce Data Analysis Dashboard
+=====================================
+📂 Dataset
 
-Deskripsi Singkat:
-Proyek ini menganalisis dataset publik e-commerce (Olist – Brazil) menggunakan Python dan Streamlit. Fokus utama adalah menggali insight terkait perilaku customer, tren penjualan, metode pembayaran, review pelanggan, dan segmentasi customer (RFM).
+Menggunakan dataset publik Brazilian E-Commerce (Olist), yang berisi:
 
-Insight Utama:
+customers_dataset.csv → informasi pelanggan
 
-Customer terbanyak berasal dari São Paulo
+orders_dataset.csv → detail order (status, waktu, pengiriman)
 
-Produk terpopuler: bed_bath_table & health_beauty
+order_items_dataset.csv → produk per order
 
-Puncak penjualan terjadi pada November 2017
+order_payments_dataset.csv → metode & nilai pembayaran
 
-Metode pembayaran dominan: kartu kredit (>70%)
+order_reviews_dataset.csv → ulasan pelanggan
 
-Review didominasi 5⭐ → menunjukkan kepuasan tinggi
+products_dataset.csv & product_category_name_translation.csv → detail produk & kategori
 
-RFM segmentation mengidentifikasi Best Customers, Loyal Customers, dan At Risk Customers
+sellers_dataset.csv → informasi penjual
 
-Tools:
+geolocation_dataset.csv → data lokasi pelanggan & penjual
 
-Python (Pandas, NumPy)
+🧭 Methodology
+==============
+Data Collection → Menggabungkan beberapa dataset Olist.
 
-Plotly & Pydeck (visualisasi)
+Data Preprocessing → cleaning, handling missing values, parsing tanggal, join tabel.
 
-Streamlit (dashboard interaktif)
+Exploratory Data Analysis (EDA) → menghitung statistik deskriptif & membuat visualisasi distribusi.
 
-Value:
-Insight dari analisis ini dapat membantu perusahaan e-commerce:
+Trend Analysis → order & revenue bulanan.
 
-Menentukan strategi retargeting pelanggan
+Segmentation (RFM) → mengukur Recency, Frequency, Monetary untuk klasifikasi pelanggan.
 
-Fokus pada kategori produk yang laku
+Visualization & Dashboard → membuat dashboard interaktif dengan Streamlit dan Plotly.
 
-Mempersiapkan strategi operasional di musim belanja
+Business Insight → menarik kesimpulan & rekomendasi strategi.
+
+💡 Key Insights
+===============
+Customer: Mayoritas berasal dari São Paulo.
+
+Products: Produk terpopuler adalah bed_bath_table dan health_beauty.
+
+Orders & Revenue: Lonjakan order terjadi pada Nov 2017 → peak season belanja.
+
+Payments: Lebih dari 70% transaksi menggunakan kartu kredit.
+
+Reviews: Didominasi rating 5⭐ → tingkat kepuasan pelanggan cukup tinggi.
+
+RFM Segmentation: Identifikasi Best Customers dan At Risk Customers → peluang retargeting.
+
+📈 Sample Visualizations
+========================
+Order Status Distribution → bar chart status pesanan (delivered, canceled, shipped, dll).
+
+Monthly Revenue Trend → line chart perkembangan penjualan.
+
+Top Product Categories → bar chart kategori produk terpopuler.
+
+Customer vs Seller Map → peta persebaran geografis (Pydeck).
+
+Customer Segmentation (RFM) → pie chart & bar chart distribusi segmen pelanggan.
+
+🏆 Project Level
+================
+Intermediate–Advanced
+
+Cocok untuk portfolio Data Analyst / Business Analyst.
+
+Menggunakan data real-world (>100k records).
+
+Menggabungkan EDA, Data Visualization, Customer Segmentation, dan Dashboarding.
+
+⚙️ Tech Stack
+=============
+Python → data preprocessing & analisis
+
+Pandas, NumPy → manipulasi data
+
+Plotly Express, Pydeck → visualisasi interaktif
+
+Streamlit → dashboard & deployment
+
+GitHub → source code & dokumentasi
+
+(Opsional) Streamlit Cloud untuk hosting live dashboard
