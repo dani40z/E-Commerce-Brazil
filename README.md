@@ -84,4 +84,3 @@ Streamlit → dashboard & deployment
 
 GitHub → source code & dokumentasi
 
-(Opsional) Streamlit Cloud untuk hosting live dashboard
